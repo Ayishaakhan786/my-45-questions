@@ -1,4 +1,4 @@
-console.log(5 + 3);
-console.log(11 - 3);
-console.log(4 * 2);
-console.log(16 / 2);
+let personName: string =`\n\t Ayisha Mahmood\t\n`;
+console.log(personName);
+let stripped: string = personName.trim();
+console.log(stripped);
