@@ -1,4 +1,9 @@
-let qoute: string= "A person who never made a mistake never tried anything new.";
-let famous_person= "Albert Einstein";
-let message= `${famous_person} once said ${qoute}`;
-console.log(message);
+// lower case
+let personName : string = "Ayisha" 
+console.log("lowercase:", personName.toLowerCase());
+
+// upper case
+console.log("uppercase:", personName.toLocaleUpperCase());
+
+// Title case
+console.log("titlecase:", personName.replace(/\bw/g,c => c.toUpperCase()));

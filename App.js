@@ -1,4 +1,7 @@
-var qoute = "A person who never made a mistake never tried anything new.";
-var famous_person = "Albert Einstein";
-var message = "".concat(famous_person, " once said ").concat(qoute);
-console.log(message);
+// lower case
+var personName = "Ayisha";
+console.log("lowercase:", personName.toLowerCase());
+// upper case
+console.log("uppercase:", personName.toLocaleUpperCase());
+// Title case
+console.log("titlecase:", personName.replace(/\bw/g, function (c) { return c.toUpperCase(); }));
