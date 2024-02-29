@@ -1,2 +1,4 @@
-let favoriteNumber: number = 4;
-console.log(`My favorite number is ${favoriteNumber}`);
+let members: string[] =['Ayisha','Hina','Sadia','Fatima','Laiba'];
+for(let i=0; i<members.length; i++) {
+    console.log(members[i]);
+}
