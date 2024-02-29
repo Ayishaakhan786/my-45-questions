@@ -1,3 +1,4 @@
-var qoute = "A person who never made a mistake never tried anything new.”";
-var author = "Albert Einstein";
-console.log("".concat(author, " once said,\"").concat(qoute));
+// exercise 10 
+// My name is Ayisha Mahmood
+// Dated: 01/03/2024
+console.log("hello world simple program");

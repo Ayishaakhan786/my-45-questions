@@ -1,3 +1,4 @@
-let qoute: string= "A person who never made a mistake never tried anything new.”";
-let author: string= "Albert Einstein";
-console.log(`${author} once said,"${qoute}`);
+// exercise 10 
+// My name is Ayisha Mahmood
+// Dated: 01/03/2024
+console.log(`hello world simple program`);
