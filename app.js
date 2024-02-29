@@ -1,4 +1,2 @@
-// exercise 10 
-// My name is Ayisha Mahmood
-// Dated: 01/03/2024
-console.log("hello world simple program");
+var favoriteNumber = 4;
+console.log("My favorite number is ".concat(favoriteNumber));
