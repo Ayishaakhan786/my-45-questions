@@ -1,5 +1,5 @@
-let members: string[] =['Ayisha','Taiba','Fiza','Laiba','Tahreem'];
-let message: string= 'kal birthday ha kis ki;';
-for(let i=0; i<members.length; i++) {
-    console.log(message + members[i]);
+// Exercise 14
+let guest_list: string[] =['Tania','Esha','Rida','Saima'];
+for(let i=0; i<guest_list.length; i++) {
+    console.log('Respected Madam' + guest_list[i] + ',\nWe invited you on dinner tomorrow.\n\nThank you.')
 }
