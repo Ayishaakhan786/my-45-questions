@@ -1,6 +1,6 @@
-// Exercise 22
-//let array: (string | number) [] = ['Ayisha','Sameer', 25 , 6 , 22 ];
-//console.log(array[5]);
-// correction 
-var array = ['Ayisha', 'Sameer', 25, 6, 22];
-console.log(array[4]);
+var languages = ['English', 'Urdu', 'Chinese', 'Italian', 'French', 'Arabic'];
+console.log("List of languages:");
+for (var _i = 0, languages_1 = languages; _i < languages_1.length; _i++) {
+    var top_1 = languages_1[_i];
+    console.log(top_1);
+}
