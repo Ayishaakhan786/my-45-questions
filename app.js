@@ -1,17 +1,11 @@
-// Exercise 29 
-var favourite_fruits = ['Mango', 'apple', 'strawberry'];
-if (favourite_fruits.includes('Mango')) {
-    console.log('I really like Mango!');
-}
-if (favourite_fruits.includes('strawberry')) {
-    console.log('I really like strawberry!');
-}
-if (favourite_fruits.includes('apple')) {
-    console.log('I really like apple!');
-}
-if (favourite_fruits.includes('grapes')) {
-    console.log('I really like grapes!');
-}
-if (favourite_fruits.includes('orange')) {
-    console.log('I really like orange!');
+// Exercise 30
+var users = ['saba', 'sameer', 'sara', 'rehman', 'hubab'];
+for (var _i = 0, users_1 = users; _i < users_1.length; _i++) {
+    var user = users_1[_i];
+    if (user === "admin") {
+        console.log("Hello Admin, would you like to see a status report");
+    }
+    else {
+        console.log("Hello ".concat(users, ",thank you for logging in again"));
+    }
 }

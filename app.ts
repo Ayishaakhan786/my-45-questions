@@ -1,17 +1,10 @@
-// Exercise 29 
-let favourite_fruits: string[] =['Mango','apple','strawberry']
-if(favourite_fruits.includes('Mango')){
-    console.log('I really like Mango!')
+// Exercise 30
+let users: string[] = ['saba','sameer','sara','rehman','hubab']
+for(let user of users){
+    if(user === "admin"){
+        console.log("Hello Admin, would you like to see a status report")
+    }
+else{
+    console.log(`Hello ${users},thank you for logging in again`)
 }
-if(favourite_fruits.includes('strawberry')){
-    console.log('I really like strawberry!')
-}
-if(favourite_fruits.includes('apple')){
-    console.log('I really like apple!')
-}
-if(favourite_fruits.includes('grapes')){
-    console.log('I really like grapes!')
-}
-if(favourite_fruits.includes('orange')){
-    console.log('I really like orange!')
 }
