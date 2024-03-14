@@ -1,15 +1,17 @@
-// Exercise 21
-interface item {
-    name : string
-    price : number
+// Exercise 29 
+let favourite_fruits: string[] =['Mango','apple','strawberry']
+if(favourite_fruits.includes('Mango')){
+    console.log('I really like Mango!')
 }
-const book : item ={
-    name : 'ESSENTIAL TYPESCRIPT'
-    price : 400 
+if(favourite_fruits.includes('strawberry')){
+    console.log('I really like strawberry!')
 }
-const apple : item ={
-    name : 'apple'
-    price : 360
+if(favourite_fruits.includes('apple')){
+    console.log('I really like apple!')
 }
-console.log(`book name: ${book.name}, price: $${book.price}`)
-console.log(`apple name: ${apple.name}, price: $${apple.price}`)
+if(favourite_fruits.includes('grapes')){
+    console.log('I really like grapes!')
+}
+if(favourite_fruits.includes('orange')){
+    console.log('I really like orange!')
+}
