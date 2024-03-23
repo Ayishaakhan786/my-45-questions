@@ -1,20 +1,10 @@
-// Exercise 33 "Ordinal Numbers."
-let numbers = [1 , 2 , 3 , 4 , 5 , 6 , 7];
-// using for-loop
-for( let oneNumber of numbers){
-    let ordinalEnding: string;
-    if(oneNumber === 1){
-        ordinalEnding = "st"
-    }
-    else if(oneNumber === 2){
-    ordinalEnding = "nd"
-    } 
-    else if(oneNumber === 3){
-    ordinalEnding = "rd"
-    }
-    else {
-    ordinalEnding = "th" 
-    } 
-    console.log(`${oneNumber}${ordinalEnding}`); 
+// Exercise 34 "Pizzas"
+// creating an Array
+let Pizzas: string[] = ['Chicken Tikka', 'Vegetable', 'Fajita']
+// Using for-loop
+for(let onePizza of Pizzas){
+    console.log(`I like ${onePizza} Pizza`);
 }
-
+// Print a message outside the for-loop
+console.log("Pizza is Love!");
+console.log("i Eat Pizza!");
