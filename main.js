@@ -1,17 +1,20 @@
-// Exercise 32 "Chacking Usernames."
-// Array of current users.
-var current_users = ['Ayisha', 'fatima', 'Sameer', 'Bismah', 'Minahil'];
-// Array of new users.
-var new_users = ['Sahar', 'Ayisha', 'Sameer', 'Rida', 'Jannat'];
-// loop through new_users to chack for usernames availability.
-new_users.forEach(function (one_new_user) {
-    // Making a condition for Username already exists & save in our_condition variable.
-    var our_conditions = current_users.some(function (one_new_user) { return one_new_user.toLowerCase() === one_new_user.toLowerCase(); });
-    // print Different Messages by using if-Else statements.
-    if (our_conditions) {
-        console.log("sorry ".concat(one_new_user, " is already taken"));
+// Exercise 33 "Ordinal Numbers."
+var numbers = [1, 2, 3, 4, 5, 6, 7];
+// using for-loop
+for (var _i = 0, numbers_1 = numbers; _i < numbers_1.length; _i++) {
+    var oneNumber = numbers_1[_i];
+    var ordinalEnding = void 0;
+    if (oneNumber === 1) {
+        ordinalEnding = "st";
+    }
+    else if (oneNumber === 2) {
+        ordinalEnding = "nd";
+    }
+    else if (oneNumber === 3) {
+        ordinalEnding = "rd";
     }
     else {
-        console.log("This Username ".concat(one_new_user, " is available"));
+        ordinalEnding = "th";
     }
-});
+    console.log("".concat(oneNumber).concat(ordinalEnding));
+}
