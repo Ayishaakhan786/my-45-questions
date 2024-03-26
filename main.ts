@@ -1,15 +1,13 @@
-// Exercise 35 "Animals.
-// creating an Array to store some pet Animal names.
-let pet_Animals: string[] = ['Cat', 'Dog', 'Cow']
-// using for-loop.
-for(let OnePet of pet_Animals){
-    console.log(`A ${OnePet} would make a great pet`)
+// Exercise: 36 "T-shirt".
+function makeShirt (size: string, printMessage: string){
+    console.log(`You selected ${size} size shirt with ${printMessage} printed on shirt`)
 }
-// Print a message outside the for-loop.
-console.log("Any of these woulde be make a great pet!");
+makeShirt("Meduim", "Ayisha khan")
 
-// Now, for Experiment we print the upper message again inside the for-loop.
-for(let OnePet of pet_Animals){
-    console.log(`A ${OnePet} would make a great pet`)
-    console.log("Any of these woulde be make a great pet!");
+// Now make some changes in this code. 
+// first, we copy the code make some minar changes in it.
+
+function make_Shirt (size: string, printMessage: string){
+    console.log(`You selected ${size} size shirt with ${printMessage} printed on shirt`)
 }
+make_Shirt("Large", "Karachi")
