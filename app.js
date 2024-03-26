@@ -1,11 +1,15 @@
-// Exercise 31
-var users = ['saba', 'sameer', 'sara', 'rehman', 'hubab'];
-// If the list is not empty.
-if (users.length === 0) {
-    console.log("we need to find some users!");
+// Exercise: 39 "City Names".
+// Describe the function with some parameters.
+function City_country(city, country) {
+    return "".concat(city, " , ").concat(country);
 }
-// if the list is empty then a print message that, we need to find some users.
-else {
-    users = [];
-    console.log("All users have been removed." + users.length);
-}
+// Now calling a function & print returned value.
+// First Time.
+City_country("Karachi", "Pakistan");
+console.log(City_country("Karachi", "Pakistan"));
+// Second Time.
+City_country("New york", "USA");
+console.log(City_country("New york", "USA"));
+// Third Time.
+City_country("Tokyo", "Japan");
+console.log(City_country("Tokyo", "Japan"));
