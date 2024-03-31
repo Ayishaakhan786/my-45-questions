@@ -1,11 +1,10 @@
-// Exercise: 38 "Cities".
-// First we describe a funtion.
-function describe_city(city: string, country: string = "Pakistan"){
-    console.log(`${city} is in ${country}`);
+// Exercise: 41 "Megicians"
+// first we make an array in which we put some values & define the function to print 
+// each megician name from array.
+let magicians: string[] = ["Saamri", "Subhan", "Herrypotter"];
+function show_magicians(magicians: string[]){
+    magicians.forEach(magicians => {
+        console.log(magicians);
+    });
 }
-// Now calling a function.
-describe_city("Karachi");
-// Now change the city name.
-describe_city("Lahore");
-// Now we both values the city and the country also.
-describe_city("Chicago", "America");
+show_magicians(magicians);
