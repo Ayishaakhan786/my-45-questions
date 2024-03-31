@@ -1,20 +1,17 @@
-// Exercise 40 "Album".
-// Define the process to make album.
-function make_Album(artist_name: string, album_tilte: string, tracks?: number){
-    let album: {artist: string, title: string, tracks?: number} = {
-        artist: artist_name ,
-        title: album_tilte , 
-    };
-    if (tracks !== undefined){
-        album.tracks = tracks;
-    }
-    return album;
+// Ecercise: 42 "Great Magicians".
+// First we Define a function to print each value of array.
+let magicians: string[] = ["Saamri", "Subhan", "Herrypotter"];
+function show_magicians(magicians: string[]){
+    magicians.forEach(magicians => {
+        console.log(magicians);
+    });
 }
-// Now, call the funtion with different values & creating three variables.
-let album1 = make_Album("Taimour Baig", "Album title 01");
-let album2 = make_Album("Atif Aslam", "Album title 02");
-let album3 = make_Album("Talha Anjum", "Album title 03" , 10);
-// Print values of the objct which are created by functions.
-console.log(album1);
-console.log(album2);
-console.log(album3);
+show_magicians(magicians);
+
+function make_great(magicians: string[]){
+    for (let i = 0; i < magicians.length; i++){
+        magicians[i] = magicians[i] + " The Great"; 
+    }
+}
+make_great(magicians);
+show_magicians(magicians);
