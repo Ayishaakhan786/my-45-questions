@@ -1,24 +1,15 @@
-// Exercise: 43 "unchanged Magicians."
-// Define the function to show magician names.
-function show_magicians(magicians) {
-    magicians.forEach(function (name) { return console.log(name); });
+// Exercise: 44 "Sandwiches"
+// First we define the functions with a rest perameter that accepts items arguements for sandwiches.
+function makeSandwich() {
+    var items = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        items[_i] = arguments[_i];
+    }
+    console.log("\n Making a sandwitch with following items: \n");
+    items.forEach(function (singleItem) { return console.log(singleItem); });
+    console.log("\n Now enjoy your sandwich");
 }
-// Function to make magicians great through .map() it will modify array.
-function make_great(magicians) {
-    return magicians.map(function (name) { return "The Great ".concat(name); });
-}
-// Define an array of magicians names
-var magicians_names = ["sameer", "Ayisha", "Erum"];
-// call make_great function to modify magician names.
-var great_magicians = make_great(magicians_names);
-// call show magicians that show modified lis of magicians.
-//show_magicians(great_magicians);
-// Make a copy of original array thorugh .slice() function.
-var copy_magician_names = magicians_names.slice();
-// Modify the copied array to include "The Great" with their names.
-var copy_great_magicians = make_great(copy_magician_names);
-// Now show both arrays(original & copied).
-// "ORIGINAL"
-show_magicians(great_magicians);
-// "COPIED"
-show_magicians(copy_magician_names);
+// Now call our function three times with three different number of arguemenats.
+makeSandwich("Cheese", "Ketchup", "Chicken", "salad", "egg");
+makeSandwich("Bread", "butter", "Raat ka salan");
+makeSandwich("Mayo", "Cheese", "chatni", "tomatoo", "fried onion", "iceburg");
