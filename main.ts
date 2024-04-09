@@ -1,11 +1,19 @@
-// Exercise: 44 "Sandwiches"
-// First we define the functions with a rest perameter that accepts items arguements for sandwiches.
-function makeSandwich(... items: string[]){
-    console.log("\n Making a sandwitch with following items: \n");
-    items.forEach(singleItem => console.log(singleItem));
-    console.log("\n Now enjoy your sandwich");
+// Exercise 45 "Cars"
+// Define a function to create an object named cars with optional options...
+function createCars(manufacturer , model , ...options){
+    // Initialize the object with manufacturer & model.
+    let cars = {
+        manufacturer: manufacturer ,
+        model: model
+    };
+    // Add additional option to the car object to select the options.
+    options.forEach(option => {
+        let [key , value] = option.split(":");
+        cars[key.trim()] = value.trim();
+    });
+    return cars ;
 }
-// Now call our function three times with three different number of arguemenats.
-makeSandwich("Cheese", "Ketchup", "Chicken", "salad","egg");
-makeSandwich("Bread", "butter", "Raat ka salan");
-makeSandwich("Mayo", "Cheese", "chatni", "tomatoo","fried onion", "iceburg");
+// Now, call the function to create an object named cars.
+let my_Car = createCars("civic", "Corolla", "color: Black", "sunroof: True", "Year: 2022");
+// Print a variable to ensure that all the given information that mentioned above is correct.
+console.log(my_Car);
